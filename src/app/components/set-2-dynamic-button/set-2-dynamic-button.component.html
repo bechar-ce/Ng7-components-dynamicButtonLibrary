@@ -1,0 +1,10 @@
+<div class="container">
+  <section class="color-2">
+    <h1>Dynamic Button Set : Example - 2 | Component</h1>
+    <p>
+      <span *ngFor="let buttonSet1 of creativeButtonArray; let i=index">
+        <button class="btn {{buttonSet1.effect}} {{buttonSet1.isActive}}" (click)="selectButton(i)">{{buttonSet1.name}}</button>
+      </span>
+    </p>
+  </section>
+</div>

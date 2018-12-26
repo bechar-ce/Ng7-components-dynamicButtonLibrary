@@ -1,0 +1,8 @@
+<div class="container">
+  <section class="color-8" id="btn-click">
+    <h1>Click on the each buttons to see the effect : Example - 8 | Component</h1>
+    <p class="perspective" *ngFor="let buttonSet of creativeButtonArray; let i=index">
+      <button class="btn {{buttonSet.effect}} {{buttonSet.isActive}}" (click)="selectButton(i)">{{buttonSet.name}}</button>
+      <p class="perspective">
+  </section>
+</div>

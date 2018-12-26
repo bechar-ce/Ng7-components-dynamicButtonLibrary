@@ -1,0 +1,11 @@
+<div class="container">
+  <header>
+    <h1>Dynamic and Creative Button Navigation (Menu) <span>Modern and subtle styles &amp; effects for buttons |
+        Component
+        (hover and click)</span></h1>
+  </header>
+  <div style="text-align: center">
+    <button *ngFor='let btn of btnArry; let i=index' class="btn {{btn.effect}}" (click)="btnClick(btn.name)">{{btn.name}}</button>
+  </div>
+  <router-outlet></router-outlet>
+</div>
